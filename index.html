@@ -12,5 +12,14 @@
 
       <p>Your browser doesn't support HTML5 audio. Here is a <a href="./test/sample1.mp3">link to the audio</a> instead.</p>
     </audio>
+
+
+    <script src="./howler.js"></script>
+    <script>
+        var sound = new Howl({
+          src: ['./test/sample1.mp3']
+        });
+        sound.play();
+    </script>
 </body>
 </html>
